@@ -1,0 +1,9 @@
+
+<h1>Task Manager</h1>
+<% @tasks.each do |task| %>
+  <p> <%= link_to task.title, task_show_path(task) %> </p>
+  <p><%= link_to "edit", tasks_path(task) %></p>
+<% end %>
+ <p> <%= link_to "new task", task_new_path  %></p>
+
+
